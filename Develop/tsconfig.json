@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    /* Basic Options */
+    "target": "es2016",                         // Reasonable JS target
+    "module": "commonjs",                       // Node.js uses CommonJS
+    "rootDir": "./src",                         // Where your .ts files live
+    "outDir": "./dist",                         // Where your compiled .js files go
+
+    /* Strict Type-Checking Options */
+    "strict": true,                             // Enable all strict checks
+    "noImplicitAny": true,                      // Disallow implicit any types
+    "strictNullChecks": true,                   // Prevent null/undefined bugs
+    "alwaysStrict": true,                       // Always emit 'use strict'
+
+    /* Module Resolution Options */
+    "moduleResolution": "node",                 // Node-style resolution
+    "esModuleInterop": true,                    // Allow CommonJS/ESM interop
+    "resolveJsonModule": true,                  // Allow importing .json files
+
+    /* JavaScript Interop */
+    "allowJs": true,                            // Allow mixing in JS files
+
+    /* Source Maps and Emit Control */
+    "noEmitOnError": true,                      // Don't emit JS on type errors
+    "skipLibCheck": true,                       // Skip type checking for libs
+
+    /* Code Quality */
+    "forceConsistentCasingInFileNames": true,   // Prevent casing mismatches
+    "noFallthroughCasesInSwitch": true          // Prevent accidental case fallthrough
+  },
+  "types": ["node"],
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
